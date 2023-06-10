@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobile_main"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/app_logo"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/new_advert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_background"
+            android:textColor="@color/black"
+            android:text="Create a new Advert"
+            android:textSize="18sp"
+            android:layout_margin="1dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_adverts"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_round_background"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_advert"
+            android:textColor="@color/black"
+            android:text="Show all lost and found items"
+            android:textSize="18sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_map"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_round_background"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_adverts"
+            android:textColor="@color/black"
+            android:text="Show all items on map"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
